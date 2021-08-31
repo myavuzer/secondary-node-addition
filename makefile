@@ -1,7 +1,7 @@
 programsn:program
-	g++  -o "./bin/Secondary"  ./lib/SecondaryNode.o ./lib/SnNode.o -lws2_32
+	g++  -o "./bin/SN"  ./lib/SecondaryNode.o ./lib/SnNode.o -lws2_32
 program:common SecondaryNode SnNode MasterNode main
-	g++  -o "./bin/Master"  ./lib/MasterNode.o ./lib/common.o ./lib/main.o   -lws2_32
+	g++  -o "./bin/MN"  ./lib/MasterNode.o ./lib/common.o ./lib/main.o   -lws2_32
 common:
 	g++ -std=c++11 -I "../include" -c -o "./lib/common.o" "../src/common.cpp"
 SecondaryNode:
