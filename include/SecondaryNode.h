@@ -32,7 +32,7 @@ public:
 	SOCKET m_socket;
 private:
 	uint16_t m_portNumber = 5090;
-	const char IP_ADDRESS[15] = "192.168.170.27";//
+	const char IP_ADDRESS[15] = "127.0.0.1";//
 
 	char  in_buf[IN_BUFFER_LENGTH] = {0};
 
